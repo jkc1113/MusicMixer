@@ -8,7 +8,6 @@ Created on Mon Mar 23 17:29:54 2020
 import numpy as np
 import wave
 import struct
-from playsound import playsound
 
 class Song:
     adc_max = 16000
@@ -20,7 +19,7 @@ class Song:
         self.sampwidth = sampwidth
         self.comptype = comptype
         self.compname = compname
-        
+
     def getnframes(self):
         return len(self.frames)
         
